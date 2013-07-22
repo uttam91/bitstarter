@@ -60,23 +60,12 @@
         line-height: 24px;
       }
 
-      /* Video pitch and Action */
+    
       .pitch {
         padding: 2.5% 0%;
       }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
+      
+      
 
       /* Marketing Copy and Footer */
       .copy {
@@ -105,7 +94,7 @@
 
     </style>
   </head>
-  <body>
+  <body style="background-image:url(http://i41.tinypic.com/2a5mcqv.jpg)">
 
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
@@ -124,8 +113,12 @@
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
-							<li><a href="#Help">FAQ</a></li>
-            </ul>
+							<li><a href="#FAQ">FAQ</a></li>
+						</ul>	
+						<ul class="nav pull-right">	
+							<li><a href="#Signin">Sign In</a></li>
+              <li><a href="#Signup">Sign Up</a></li>
+						</ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -152,17 +145,33 @@
       </div>
 			<div class="row-fluid pitch">
 			 <div class="span12">
-        <div align="center"><img class="img-polaroid" src="http://i43.tinypic.com/15qe0k6.jpg"></div>
+        <div align="center"><img src="http://i42.tinypic.com/xokubb.png"></div>
         </div>
         </div>
-				<div class="span4 offset2">
-         <button class="btn btn-large btn-primary">Post Idea</button>  
-        </div>
-        <div class="span4 offset1">
-          <button class="btn btn-large btn-primary">Post Project</button>
-      </div>
+			</div>
 
-    
+    <div class="row-fluid faq">
+          <div class="span10 offset1">
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
+                    <h4>How does this work?</h4>
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div style="text-align:justify" class="accordion-inner">
+                    We come up with many ideas daily, and not do much about it. This website allows you to post your ideas and lets you know what others think of it. You can also connect with them
+										and discuss about a solution. It also allows you to post completed projects (or partially completed) to help or get help
+										from interested people.
+									 
+                  </div>
+                </div>
+              </div>
+							</div>
+							</div>
+							</div>
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
